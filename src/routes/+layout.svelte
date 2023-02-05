@@ -2,4 +2,6 @@
     import '../app.css'
 </script>
 
-<slot/>
+<main class="font-sans text-sm font-bold">
+    <slot/>
+</main>

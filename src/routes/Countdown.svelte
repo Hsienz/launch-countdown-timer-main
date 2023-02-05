@@ -27,7 +27,7 @@
     }
 </script>
 
-<div>
+<div class="flex gap-4">
     {#each expand($countdown,from) as x}
         <Flipper countdown={x}/>
     {/each}

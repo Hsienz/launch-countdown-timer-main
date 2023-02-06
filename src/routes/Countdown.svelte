@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onDestroy, onMount } from "svelte";
-    import { countdown, from } from "./store";
+    import { countdown, from, tags } from "./store";
     import {expand} from '$lib/convert'
     import Flipper from "./Flipper.svelte";
     
@@ -27,8 +27,8 @@
     }
 </script>
 
-<div class="flex gap-4">
-    {#each expand($countdown,from) as x}
-        <Flipper countdown={x}/>
+<div class="flex gap-4 md:gap-8">
+    {#each expand($countdown,from) as x,i}
+        <Flipper countdown={x} tag={tags[i]}/>
     {/each}
 </div>

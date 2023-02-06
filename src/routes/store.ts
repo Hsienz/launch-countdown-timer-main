@@ -12,5 +12,6 @@ const createCountdown = (countdown:number) => {
 
 const init = [8,23,55,41]
 export const from = [24,60,60]
+export const tags = ['DAYS','HOURS','MINUTES','SECONDS']
 
 export const countdown = createCountdown(compress(init,from))

@@ -1,5 +1,5 @@
 export const compress = (a:Array<number>,b:Array<number>) => {
-    if(a.length!=b.length) console.log('convert error')
+    if(a.length!=b.length+1) console.log('convert error')
     let res = 0
     let prev = 1
     for( let i = 0 ; i < a.length ; i++ ) {
